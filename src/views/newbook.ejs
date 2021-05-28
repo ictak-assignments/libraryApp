@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New book</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Library App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/books">Books</a>
+                <a class="nav-link" href="/authors">Authors</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="container mt-5">
+    <div class="row">
+    <h1 class="text-center">Add a new book</h1>
+    <div class="col-6 offset-3">
+    <form action="/books" method="post">
+        <section class="mb-3">
+            <label  class="form-label"  for="title">Book name</label>
+            <br>
+            <input  class="form-control" type="text" id="title" placeholder="book title" name="title" required>
+        </section>
+        <section>
+            <label class="form-label" for="author">Enter authorname:</label>
+            <input  class="form-control" type="text" id="author" placeholder="author" name="author" required>
+        </section>
+        
+        <section>
+            <label class="form-label" for="genre">genre name</label>
+            <br>
+            <input  class="form-control" type="text" id="genre" placeholder="genre" name="genre" required>
+        </section>
+        <section>
+            <label class="form-label" for="img">image source</label>
+            <br>
+            <input  class="form-control" type="text" id="img" placeholder="image url" name="img" required>
+        </section>
+        <div class="mb-3">
+                <button class="btn btn-success">Add Book</button>
+            </div>
+    </form>
+    <a href="/books">Back to All books</a>
+    </div>
+</div>
+</main>
+    
+
+    <footer style="text-align: center;" class="footer bg-dark py-3 mt-auto">
+    <div class="container">
+        <span class="text-muted" >&copy; library 2021</span>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
